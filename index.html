@@ -5,102 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Survivor Clan Statistics</title>
+    <title>Stray Legends Stats</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <div class="app-container">
 
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <!-- Header -->
+        <header class="top-header">
 
             <div class="logo">
-                <h2>Survivor Stats</h2>
+                <h1>Stray Legends</h1>
             </div>
 
-            <nav>
-                <a href="#" class="nav-link active">Dashboard</a>
-                <a href="#" class="nav-link">Clan Overview</a>
-                <a href="#" class="nav-link">Players</a>
-                <a href="#" class="nav-link">Leaderboards</a>
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
 
-                <div class="nav-divider"></div>
+        </header>
 
-                <p class="nav-heading">PLAYER STATISTICS</p>
+        <!-- Primary Navigation -->
+        <nav class="main-navigation">
 
-                <a href="#" class="nav-link">Player Cores</a>
-                <a href="#" class="nav-link">Lunar Mine Expedition</a>
-                <a href="#" class="nav-link">Cosmic Expedition</a>
-                <a href="#" class="nav-link">Ender's Echo</a>
-            </nav>
+            <button class="nav-button active" data-page="stats">
+                Stats
+            </button>
 
-        </aside>
+            <button class="nav-button" data-page="lme">
+                LME
+            </button>
+
+            <button class="nav-button" data-page="cx">
+                CX
+            </button>
+
+            <button class="nav-button" data-page="enders-echo">
+                Ender's Echo
+            </button>
+
+        </nav>
+
+        <!-- Secondary Menu -->
+        <div class="menu-dropdown" id="menuDropdown">
+
+            <a href="#">Clan ID: 24273</a>
+            <a href="#">About</a>
+
+        </div>
 
         <!-- Main Content -->
         <main class="main-content">
 
-            <header class="top-header">
-                <div>
-                    <h1>Dashboard</h1>
-                    <p>Clan statistics and player performance</p>
-                </div>
+            <section class="page-content active" id="stats">
 
-                <div class="header-right">
-                    <span>Clan Dashboard</span>
-                </div>
-            </header>
-
-            <!-- Dashboard Content -->
-            <section class="dashboard-content">
-
-                <div class="welcome-section">
-                    <h2>Welcome to Survivor Clan Stats</h2>
-                    <p>Track your clan's performance and player progression.</p>
-                </div>
-
-                <!-- Statistics Cards -->
+                <h1>Overall Clan Stats</h1>
+                
                 <div class="stats-grid">
 
                     <div class="stat-card">
-                        <p>Total Players</p>
-                        <h2 id="totalPlayers">0</h2>
+                        <p>Total Members</p>
+                        <h2 id="totalMembers">0</h2>
                     </div>
 
                     <div class="stat-card">
-                        <p>Clan Level</p>
-                        <h2 id="clanLevel">0</h2>
+                        <p>Total ATK</p>
+                        <h2 id="totalATK">0</h2>
                     </div>
 
                     <div class="stat-card">
-                        <p>Total Clan Power</p>
-                        <h2 id="clanPower">0</h2>
+                        <p>Avg ATK</p>
+                        <h2 id="avgATK">0</h2>
                     </div>
 
                     <div class="stat-card">
-                        <p>Average Player Level</p>
-                        <h2 id="averageLevel">0</h2>
+                        <p>Total Relic Cores</p>
+                        <h2 id="totalRelicCores">0</h2>
                     </div>
 
                 </div>
 
-                <!-- Main Dashboard Panels -->
-                <div class="dashboard-grid">
+            </section>
 
-                    <div class="dashboard-panel">
-                        <h3>Top Players</h3>
-                        <p>Top-performing clan members will appear here.</p>
-                    </div>
+            <section class="page-content" id="lme">
+                <h1>Lunar Mine Expedition</h1>
+                <p>LME player statistics and rankings.</p>
+            </section>
 
-                    <div class="dashboard-panel">
-                        <h3>Recent Activity</h3>
-                        <p>Recent player updates will appear here.</p>
-                    </div>
+            <section class="page-content" id="cx">
+                <h1>Cosmic Expedition</h1>
+                <p>CX player statistics and rankings.</p>
+            </section>
 
-                </div>
-
+            <section class="page-content" id="enders-echo">
+                <h1>Ender's Echo</h1>
+                <p>Ender's Echo player statistics and rankings.</p>
             </section>
 
         </main>
@@ -108,6 +108,5 @@
     </div>
 
     <script src="js/main.js"></script>
-
 </body>
 </html>
