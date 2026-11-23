@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survivor Clan Statistics</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>Survivor Stats</h2>
+            </div>
+
+            <nav>
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">Clan Overview</a>
+                <a href="#" class="nav-link">Players</a>
+                <a href="#" class="nav-link">Leaderboards</a>
+
+                <div class="nav-divider"></div>
+
+                <p class="nav-heading">PLAYER STATISTICS</p>
+
+                <a href="#" class="nav-link">Player Cores</a>
+                <a href="#" class="nav-link">Lunar Mine Expedition</a>
+                <a href="#" class="nav-link">Cosmic Expedition</a>
+                <a href="#" class="nav-link">Ender's Echo</a>
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="top-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Clan statistics and player performance</p>
+                </div>
+
+                <div class="header-right">
+                    <span>Clan Dashboard</span>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <section class="dashboard-content">
+
+                <div class="welcome-section">
+                    <h2>Welcome to Survivor Clan Stats</h2>
+                    <p>Track your clan's performance and player progression.</p>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <p>Total Players</p>
+                        <h2 id="totalPlayers">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Clan Level</p>
+                        <h2 id="clanLevel">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Total Clan Power</p>
+                        <h2 id="clanPower">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Average Player Level</p>
+                        <h2 id="averageLevel">0</h2>
+                    </div>
+
+                </div>
+
+                <!-- Main Dashboard Panels -->
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-panel">
+                        <h3>Top Players</h3>
+                        <p>Top-performing clan members will appear here.</p>
+                    </div>
+
+                    <div class="dashboard-panel">
+                        <h3>Recent Activity</h3>
+                        <p>Recent player updates will appear here.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
