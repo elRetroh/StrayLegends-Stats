@@ -86,6 +86,43 @@
 
                 </div>
 
+                <!-- Player Directory -->
+                <div class="player-section">
+
+                    <div class="player-section-header">
+                        <h2>Members</h2>
+                        <input
+                            type="text"
+                            id="playerSearch"
+                            placeholder="Search players..."
+                        >
+                    </div>
+
+                    <div class="table-container">
+
+                        <table class="player-table">
+
+                            <thead>
+                                <tr>
+                                    <th data-sort="name">Player Name</th>
+                                    <th data-sort="totalAtk">Total ATK</th>
+                                    <th data-sort="relicCore">Relic Core</th>
+                                    <th data-sort="transmuteCore">Transmute Core</th>
+                                    <th data-sort="relicChip">Relic Chip</th>
+                                    <th data-sort="awakeningCore">Awakening Core</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="playerTableBody">
+                                <!-- JavaScript populates players here -->
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
             </section>
 
             <section class="page-content" id="lme">
@@ -93,9 +130,41 @@
                 <p>LME player statistics and rankings.</p>
             </section>
 
+            <!--Clan Expedition-->
             <section class="page-content" id="cx">
-                <h1>Cosmic Expedition</h1>
+
+                <h1>Clan Expedition</h1>
+
                 <p>CX player statistics and rankings.</p>
+
+                <div class="cx-leaderboard">
+
+                    <h2>Player Leaderboard</h2>
+
+                    <div class="table-container">
+
+                        <table id="cxPlayerTable">
+
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>CX Score</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="cxPlayerTableBody">
+                                <tr>
+                                    <td colspan="3">Loading players...</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
             </section>
 
             <section class="page-content" id="enders-echo">

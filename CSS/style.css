@@ -35,6 +35,7 @@ body {
 .logo h2 {
     color: #66b0ff;
     font-size: 20px;
+    margin: 0 auto;
 }
 
 .menu-button {
@@ -174,6 +175,116 @@ body {
 
     .nav-button {
         font-size: 14px;
+    }
+
+}
+
+/* Player Directory */
+
+.player-section {
+    margin-top: 30px;
+    background-color: #191c23;
+    border: 1px solid #292d36;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.player-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.player-section-header h2 {
+    font-size: 18px;
+}
+
+#playerSearch {
+    background-color: #111318;
+    border: 1px solid #333842;
+    border-radius: 5px;
+    padding: 9px 12px;
+    color: white;
+    outline: none;
+    width: 200px;
+}
+
+#playerSearch:focus {
+    border-color: #66b0ff;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.player-table th {
+    background-color: #20242d;
+    color: #929baa;
+    padding: 14px 16px;
+    text-align: right;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.player-table th:first-child {
+    text-align: left;
+}
+
+.player-table td {
+    padding: 14px 16px;
+    border-top: 1px solid #292d36;
+    text-align: right;
+    color: #c4cad4;
+}
+
+.player-table td:first-child {
+    text-align: left;
+}
+
+.player-table tbody tr:hover {
+    background-color: #242a35;
+}
+
+.player-name {
+    color: #66b0ff !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.player-name:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Adjustments */
+
+@media (max-width: 650px) {
+
+    .player-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #playerSearch {
+        width: 100%;
+    }
+
+    .player-table {
+        font-size: 12px;
+    }
+
+    .player-table th,
+    .player-table td {
+        padding: 12px;
     }
 
 }
