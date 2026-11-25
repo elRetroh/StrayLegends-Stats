@@ -152,7 +152,7 @@ function renderPlayerTable() {
 
 }
 
-//This loads the player data from the Json file
+//This loads the cx player data from the Json file
 async function loadCXPlayers() {
 
     const tableBody = document.getElementById("cxPlayerTableBody");
@@ -208,6 +208,62 @@ async function loadCXPlayers() {
 
 }
 
+//This loads the lme player data from the Json file
+async function loadLMEPlayers() {
+
+    const tableBody = document.getElementById("lme-table-body");
+
+    try {
+
+        // Retrieve the player data
+        const response = await fetch("data/lme/current.json");
+
+        if (!response.ok) {
+            throw new Error("Could not load LME player data.");
+        }
+
+        // Convert the response into JavaScript data
+        const players = await response.json();
+
+        // Clear the loading message
+        tableBody.innerHTML = "";
+
+        // Create a row for each player
+        players.forEach(player => {
+
+            const row = document.createElement("tr");
+
+            const rankCell = document.createElement("td");
+            rankCell.textContent = player.rank;
+
+            const nameCell = document.createElement("td");
+            nameCell.textContent = player.name;
+
+            const scoreCell = document.createElement("td");
+            scoreCell.textContent = player.lme_score.toLocaleString();
+
+            row.appendChild(rankCell);
+            row.appendChild(nameCell);
+            row.appendChild(scoreCell);
+
+            tableBody.appendChild(row);
+
+        });
+
+    } catch (error) {
+
+        console.error("LME Leaderboard Error:", error);
+
+        tableBody.innerHTML = `
+            <tr>
+                <td colspan="3">Unable to load player data.</td>
+            </tr>
+        `;
+
+    }
+
+}
+
 
 // Column Sorting
 
@@ -242,3 +298,4 @@ document.getElementById("playerSearch")
 updateDashboard();
 renderPlayerTable();
 loadCXPlayers();
+loadLMEPlayers();

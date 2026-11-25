@@ -1,242 +1,236 @@
 [
     {
         "rank": 1,
+        "player_id": 63623852,
+        "name": "Adeebja",
+        "lme_score": 3920
+    },
+    {
+        "rank": 2,
         "player_id": 72039113,
         "name": "Retrσ",
         "lme_score": 3909
     },
     {
-        "rank": 2,
+        "rank": 3,
+        "player_id": 41507187,
+        "name": "Benben",
+        "lme_score": 3721
+    },
+    {
+        "rank": 4,
         "player_id": 68703097,
         "name": "Retroˢᵗʳᵃʸ",
         "lme_score": 3575
     },
     {
-        "rank": 3,
+        "rank": 5,
         "player_id": 51841677,
         "name": "Silverkelt2!",
         "lme_score": 3364
     },
     {
-        "rank": 4,
-        "player_id": 16089194,
-        "name": "Silverkelt",
-        "lme_score": 3197
-    },
-    {
-        "rank": 5,
-        "player_id": 78565039,
-        "name": "Piercerrr",
-        "lme_score": 0
-    },
-    {
         "rank": 6,
-        "player_id": 86731946,
-        "name": "dhayyyyy",
-        "lme_score": 0
+        "player_id": 21375497,
+        "name": "CussieAunt",
+        "lme_score": 3292
     },
     {
         "rank": 7,
-        "player_id": 79561850,
-        "name": "Ur$hi⁸",
-        "lme_score": 0
+        "player_id": 73704945,
+        "name": "RyeWhiskey",
+        "lme_score": 3283
     },
     {
         "rank": 8,
-        "player_id": 85232848,
-        "name": "PapaSmurf654",
-        "lme_score": 0
+        "player_id": 19157963,
+        "name": "LoveSosa1",
+        "lme_score": 3234
     },
     {
         "rank": 9,
-        "player_id": 86991274,
-        "name": "RL325660ㅣStray",
-        "lme_score": 0
+        "player_id": 16089194,
+        "name": "Silverkelt",
+        "lme_score": 3234
     },
     {
         "rank": 10,
-        "player_id": 56222416,
-        "name": "silverjaxツ",
-        "lme_score": 0
+        "player_id": 70992848,
+        "name": "tiepls",
+        "lme_score": 3226
     },
     {
         "rank": 11,
-        "player_id": 41507187,
-        "name": "Benben",
-        "lme_score": 0
+        "player_id": 86731946,
+        "name": "dhayyyyy",
+        "lme_score": 3187
     },
     {
         "rank": 12,
-        "player_id": 21375497,
-        "name": "CussieAunt",
-        "lme_score": 0
+        "player_id": 60604607,
+        "name": "B1inK",
+        "lme_score": 3177
     },
     {
         "rank": 13,
-        "player_id": 73704945,
-        "name": "RyeWhiskey",
-        "lme_score": 0
+        "player_id": 22215467,
+        "name": "TripyJ",
+        "lme_score": 3149
     },
     {
         "rank": 14,
-        "player_id": 32595492,
-        "name": "Mr.keke",
-        "lme_score": 0
+        "player_id": 78565039,
+        "name": "Piercerrr",
+        "lme_score": 3130
     },
     {
         "rank": 15,
         "player_id": 79546282,
         "name": "Jaylimmy",
-        "lme_score": 0
+        "lme_score": 3102
     },
     {
         "rank": 16,
+        "player_id": 68362673,
+        "name": "csider",
+        "lme_score": 3079
+    },
+    {
+        "rank": 17,
+        "player_id": 33921460,
+        "name": "FryerofChicken",
+        "lme_score": 3050
+    },
+    {
+        "rank": 18,
+        "player_id": 50882530,
+        "name": "AntonSh",
+        "lme_score": 3027
+    },
+    {
+        "rank": 19,
+        "player_id": 60345662,
+        "name": "Collador",
+        "lme_score": 2882
+    },
+    {
+        "rank": 20,
+        "player_id": 30473184,
+        "name": "tRx",
+        "lme_score": 2765
+    },
+    {
+        "rank": 21,
+        "player_id": 36760012,
+        "name": "Pumchi",
+        "lme_score": 2754
+    },
+    {
+        "rank": 22,
+        "player_id": 53570069,
+        "name": "aNikˢᵗʳᵃʸ",
+        "lme_score": 2752
+    },
+    {
+        "rank": 23,
+        "player_id": 19977423,
+        "name": "p34nUtㅣStray",
+        "lme_score": 2715
+    },
+    {
+        "rank": 24,
+        "player_id": 34984610,
+        "name": "MONSTERA",
+        "lme_score": 2520
+    },
+    {
+        "rank": 25,
+        "player_id": 79561850,
+        "name": "Ur$hi⁸",
+        "lme_score": 0
+    },
+    {
+        "rank": 26,
+        "player_id": 85232848,
+        "name": "PapaSmurf654",
+        "lme_score": 0
+    },
+    {
+        "rank": 27,
+        "player_id": 86991274,
+        "name": "RL325660ㅣStray",
+        "lme_score": 0
+    },
+    {
+        "rank": 28,
+        "player_id": 56222416,
+        "name": "silverjaxツ",
+        "lme_score": 0
+    },
+    {
+        "rank": 29,
+        "player_id": 32595492,
+        "name": "Mr.keke",
+        "lme_score": 0
+    },
+    {
+        "rank": 30,
         "player_id": 62730593,
         "name": "Tripsixes",
         "lme_score": 0
     },
     {
-        "rank": 17,
-        "player_id": 41270123,
-        "name": "UrshiㅣStray",
-        "lme_score": 0
-    },
-    {
-        "rank": 18,
+        "rank": 31,
         "player_id": 123602689,
         "name": "RetroTools",
         "lme_score": 0
     },
     {
-        "rank": 19,
+        "rank": 32,
         "player_id": 86763402,
         "name": "TheKO",
         "lme_score": 0
     },
     {
-        "rank": 20,
+        "rank": 33,
         "player_id": 88444519,
         "name": "SC—chickensteve",
         "lme_score": 0
     },
     {
-        "rank": 21,
-        "player_id": 68362673,
-        "name": "csider",
-        "lme_score": 0
-    },
-    {
-        "rank": 22,
-        "player_id": 60604607,
-        "name": "B1inK",
-        "lme_score": 0
-    },
-    {
-        "rank": 23,
-        "player_id": 53570069,
-        "name": "aNikˢᵗʳᵃʸ",
-        "lme_score": 0
-    },
-    {
-        "rank": 24,
-        "player_id": 60345662,
-        "name": "Collador",
-        "lme_score": 0
-    },
-    {
-        "rank": 25,
+        "rank": 34,
         "player_id": 22689148,
         "name": "rank1Stoppls",
         "lme_score": 0
     },
     {
-        "rank": 26,
-        "player_id": 63623852,
-        "name": "Adeebja",
-        "lme_score": 0
-    },
-    {
-        "rank": 27,
+        "rank": 35,
         "player_id": 11371716,
         "name": "MrStarrr",
         "lme_score": 0
     },
     {
-        "rank": 28,
-        "player_id": 50882530,
-        "name": "AntonSh",
-        "lme_score": 0
-    },
-    {
-        "rank": 29,
-        "player_id": 70992848,
-        "name": "tiepls",
-        "lme_score": 0
-    },
-    {
-        "rank": 30,
+        "rank": 36,
         "player_id": 37634323,
         "name": "lexidormor",
         "lme_score": 0
     },
     {
-        "rank": 31,
+        "rank": 37,
         "player_id": 54292755,
         "name": "Hahachris",
         "lme_score": 0
     },
     {
-        "rank": 32,
-        "player_id": 19157963,
-        "name": "LoveSosa1",
-        "lme_score": 0
-    },
-    {
-        "rank": 33,
-        "player_id": 30473184,
-        "name": "tRx",
-        "lme_score": 0
-    },
-    {
-        "rank": 34,
-        "player_id": 33921460,
-        "name": "FryerofChicken",
-        "lme_score": 0
-    },
-    {
-        "rank": 35,
+        "rank": 38,
         "player_id": 59999072,
         "name": "raccoonraccoon",
         "lme_score": 0
     },
     {
-        "rank": 36,
-        "player_id": 34984610,
-        "name": "MONSTERA",
-        "lme_score": 0
-    },
-    {
-        "rank": 37,
+        "rank": 39,
         "player_id": 74865679,
         "name": "eurxㅣStray",
-        "lme_score": 0
-    },
-    {
-        "rank": 38,
-        "player_id": 22215467,
-        "name": "TripyJ",
-        "lme_score": 0
-    },
-    {
-        "rank": 39,
-        "player_id": 36760012,
-        "name": "Pumchi",
-        "lme_score": 0
-    },
-    {
-        "rank": 40,
-        "player_id": 19977423,
-        "name": "p34nUtㅣStray",
         "lme_score": 0
     }
 ]
