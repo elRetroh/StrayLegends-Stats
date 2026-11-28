@@ -1,0 +1,197 @@
+[
+  {
+    "type": "profile",
+    "player_id": 72039113,
+    "name": "Retrσ",
+    "cosmetic_ids": [
+      25095,
+      28067
+    ],
+    "atk": 3824523,
+    "hp": 11121768,
+    "clan_id": 24273,
+    "clan_name": "StrayLegends",
+    "clan_level": 18,
+    "main_survivor": 6027,
+    "chaos_fusion_power": 48,
+    "gear": [
+      {
+        "item_id": 31328398,
+        "code": 350116,
+        "rarity": "SS",
+        "level": 230,
+        "eternal": 5,
+        "void": 5,
+        "chaos": 10,
+        "transmute": 12,
+        "f9": 15005,
+        "f10": 35001
+      },
+      {
+        "item_id": 33870235,
+        "code": 360116,
+        "rarity": "SS",
+        "level": 230,
+        "eternal": 5,
+        "void": 5,
+        "chaos": 10,
+        "transmute": 0,
+        "f9": null,
+        "f10": null
+      },
+      {
+        "item_id": 41403221,
+        "code": 230215,
+        "rarity": "S",
+        "level": 160,
+        "eternal": 3,
+        "void": 0,
+        "chaos": 0,
+        "transmute": 0,
+        "f9": null,
+        "f10": null
+      },
+      {
+        "item_id": 26520031,
+        "code": 320116,
+        "rarity": "SS",
+        "level": 220,
+        "eternal": 4,
+        "void": 4,
+        "chaos": 8,
+        "transmute": 5,
+        "f9": 12001,
+        "f10": 32001
+      },
+      {
+        "item_id": 58344400,
+        "code": 240315,
+        "rarity": "S",
+        "level": 160,
+        "eternal": 3,
+        "void": 0,
+        "chaos": 0,
+        "transmute": 0,
+        "f9": null,
+        "f10": null
+      },
+      {
+        "item_id": 24100541,
+        "code": 310116,
+        "rarity": "SS",
+        "level": 220,
+        "eternal": 4,
+        "void": 4,
+        "chaos": 8,
+        "transmute": 5,
+        "f9": 11001,
+        "f10": 31001
+      }
+    ],
+    "relic_equipped": 268,
+    "relic_benched_estimate": 58,
+    "relic_total": 326,
+    "benched_pieces_assumed": [
+      {
+        "chaos": 6,
+        "eternal": 3,
+        "void": 3,
+        "relic": 29
+      },
+      {
+        "chaos": 6,
+        "eternal": 3,
+        "void": 3,
+        "relic": 29
+      }
+    ],
+    "transmute_total": 72,
+    "reso": {
+      "parts": [
+        {
+          "code": 1030101,
+          "resonance_level": 4,
+          "overload_level": 4,
+          "chips": 9,
+          "red": 0
+        },
+        {
+          "code": 1030301,
+          "resonance_level": 1,
+          "overload_level": 1,
+          "chips": 1,
+          "red": 0
+        },
+        {
+          "code": 1030401,
+          "resonance_level": 2,
+          "overload_level": 2,
+          "chips": 3,
+          "red": 0
+        },
+        {
+          "code": 1030501,
+          "resonance_level": 21,
+          "overload_level": 18,
+          "chips": 150,
+          "red": 16
+        },
+        {
+          "code": 1030601,
+          "resonance_level": 4,
+          "overload_level": 4,
+          "chips": 9,
+          "red": 0
+        },
+        {
+          "code": 1040201,
+          "resonance_level": 4,
+          "overload_level": 4,
+          "chips": 9,
+          "red": 0
+        }
+      ],
+      "reso_chips": 181,
+      "red_techs": 16
+    },
+    "awakening": {
+      "survivors": [
+        {
+          "type": 6027,
+          "name": "Elaine",
+          "instance_id": 65671271,
+          "level": 154,
+          "stars": 6,
+          "awakening": 8,
+          "awaken_cores": 120
+        },
+        {
+          "type": 6022,
+          "name": "Venato",
+          "instance_id": 57147122,
+          "level": 154,
+          "stars": 6,
+          "awakening": 4,
+          "awaken_cores": 15
+        },
+        {
+          "type": 6021,
+          "name": "Taloxa",
+          "instance_id": 46588848,
+          "level": 154,
+          "stars": 6,
+          "awakening": 4,
+          "awaken_cores": 15
+        }
+      ],
+      "synergy_level": 34,
+      "synergy_cores": 32,
+      "team_awaken_cores": 150,
+      "awakening_cores_low": 185,
+      "awakening_cores_high": 212
+    },
+    "warnings": [],
+    "file": "retro_response.data",
+    "counter": 10118
+  }
+]

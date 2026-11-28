@@ -1,4 +1,6 @@
-/* General Settings */
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
 
 * {
     margin: 0;
@@ -19,7 +21,10 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+
+/* =========================================
+   HEADER
+========================================= */
 
 .top-header {
     height: 65px;
@@ -46,7 +51,10 @@ body {
     cursor: pointer;
 }
 
-/* Navigation */
+
+/* =========================================
+   NAVIGATION
+========================================= */
 
 .main-navigation {
     display: grid;
@@ -77,7 +85,10 @@ body {
     border-bottom: 3px solid #66b0ff;
 }
 
-/* Dropdown Menu */
+
+/* =========================================
+   DROPDOWN MENU
+========================================= */
 
 .menu-dropdown {
     display: none;
@@ -110,7 +121,10 @@ body {
     color: white;
 }
 
-/* Main Content */
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
 
 .main-content {
     padding: 25px 20px;
@@ -135,7 +149,10 @@ body {
     margin-bottom: 25px;
 }
 
-/* Statistics Cards */
+
+/* =========================================
+   STATISTICS CARDS
+========================================= */
 
 .stats-grid {
     display: grid;
@@ -161,25 +178,10 @@ body {
     color: #66b0ff;
 }
 
-/* Desktop Layout */
 
-@media (min-width: 768px) {
-
-    .main-content {
-        padding: 35px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .nav-button {
-        font-size: 14px;
-    }
-
-}
-
-/* Player Directory */
+/* =========================================
+   PLAYER DIRECTORY
+========================================= */
 
 .player-section {
     margin-top: 30px;
@@ -214,6 +216,11 @@ body {
 #playerSearch:focus {
     border-color: #66b0ff;
 }
+
+
+/* =========================================
+   TABLE BASE STYLING
+========================================= */
 
 .table-container {
     width: 100%;
@@ -265,7 +272,305 @@ body {
     text-decoration: underline;
 }
 
-/* Mobile Adjustments */
+
+/* =========================================
+   GROWTH INDICATORS
+========================================= */
+
+/* LME Growth Indicators Only */
+
+#lme-table-body .growth-positive {
+    color: #43d17d !important;
+}
+
+#lme-table-body .growth-negative {
+    color: #ff6262 !important;
+}
+
+#lme-table-body .growth-neutral {
+    color: #929baa !important;
+}
+
+
+/* =========================================
+   CX AND LME PAGE CONTAINERS
+========================================= */
+
+#cx,
+#lme {
+    background-color: #191c23;
+    border: 1px solid #292d36;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+#cx h1,
+#lme h1 {
+    margin-bottom: 8px;
+}
+
+#cx > p,
+#lme > p {
+    color: #929baa;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #292d36;
+}
+
+
+/* =========================================
+   CX AND LME TABLE LAYOUT
+========================================= */
+
+#cx .table-container,
+#lme .table-container {
+    width: 80%;
+    margin: 25px auto 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#cx #cx-table,
+#lme #lme-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+/* =========================================
+   TABLE HEADERS
+========================================= */
+
+#cx-table thead th,
+#lme-table thead th {
+    background-color: #252b36;
+    color: #cbd3df;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+
+/* =========================================
+   TABLE ALIGNMENT
+========================================= */
+
+#cx-table th:first-child,
+#cx-table td:first-child,
+#lme-table th:first-child,
+#lme-table td:first-child {
+    text-align: center;
+}
+
+#cx-table th:nth-child(2),
+#cx-table td:nth-child(2),
+#lme-table th:nth-child(2),
+#lme-table td:nth-child(2) {
+    text-align: left;
+}
+
+#cx-table th:last-child,
+#cx-table td:last-child,
+#lme-table th:last-child,
+#lme-table td:last-child {
+    text-align: right;
+}
+
+
+/* =========================================
+   TOP THREE PLAYER STYLING
+========================================= */
+
+/* Gold - 1st Place */
+
+#cx-table-body tr:first-child,
+#lme-table-body tr:first-child {
+    background: linear-gradient(90deg, #3d3420, #24221c);
+}
+
+#cx-table-body tr:first-child td,
+#lme-table-body tr:first-child td {
+    color: #f5d76e;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#cx-table-body tr:first-child td:first-child,
+#lme-table-body tr:first-child td:first-child {
+    border-left: 4px solid #f5d76e;
+}
+
+
+/* Silver - 2nd Place */
+
+#cx-table-body tr:nth-child(2),
+#lme-table-body tr:nth-child(2) {
+    background: linear-gradient(90deg, #30343b, #24272d);
+}
+
+#cx-table-body tr:nth-child(2) td,
+#lme-table-body tr:nth-child(2) td {
+    color: #d2d6df;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#cx-table-body tr:nth-child(2) td:first-child,
+#lme-table-body tr:nth-child(2) td:first-child {
+    border-left: 4px solid #bfc7d5;
+}
+
+
+/* Bronze - 3rd Place */
+
+#cx-table-body tr:nth-child(3),
+#lme-table-body tr:nth-child(3) {
+    background: linear-gradient(90deg, #3b2d25, #27221f);
+}
+
+#cx-table-body tr:nth-child(3) td,
+#lme-table-body tr:nth-child(3) td {
+    color: #d69b72;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#cx-table-body tr:nth-child(3) td:first-child,
+#lme-table-body tr:nth-child(3) td:first-child {
+    border-left: 4px solid #b87950;
+}
+
+
+/* =========================================
+   LEADERBOARD ROW REFINEMENTS
+========================================= */
+
+#cx-table-body tr,
+#lme-table-body tr {
+    transition: background-color 0.2s ease;
+}
+
+#cx-table-body tr:nth-child(n+4):nth-child(even),
+#lme-table-body tr:nth-child(n+4):nth-child(even) {
+    background-color: #252b36;
+}
+
+#cx-table-body tr:nth-child(n+4):nth-child(odd),
+#lme-table-body tr:nth-child(n+4):nth-child(odd) {
+    background-color: #202530;
+}
+
+#cx-table-body tr:nth-child(n+4):hover,
+#lme-table-body tr:nth-child(n+4):hover {
+    background-color: #303847;
+}
+
+#cx-table-body td,
+#lme-table-body td {
+    padding: 10px 16px;
+}
+
+#cx-table-body tr:nth-child(4) td,
+#lme-table-body tr:nth-child(4) td {
+    border-top: 2px solid #3a404c;
+}
+
+
+/* =========================================
+   RANK COLUMN
+========================================= */
+
+#cx-table-body td:first-child,
+#lme-table-body td:first-child {
+    width: 65px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+#cx-table-body tr:nth-child(n+4) td:first-child,
+#lme-table-body tr:nth-child(n+4) td:first-child {
+    color: #929baa;
+}
+
+
+/* =========================================
+   PLAYER NAME COLUMN
+========================================= */
+
+#cx-table-body td:nth-child(2),
+#lme-table-body td:nth-child(2) {
+    font-weight: 700;
+}
+
+#cx-table-body .player-name,
+#lme-table-body .player-name {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   SCORE COLUMN
+========================================= */
+
+#cx-table-body td:last-child,
+#lme-table-body td:last-child {
+    font-size: 16px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.2px;
+}
+
+#cx-table-body td:last-child span,
+#lme-table-body td:last-child span {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0;
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   LAST UPDATED TIMESTAMP
+========================================= */
+
+#cx-last-updated,
+#lme-last-updated {
+    color: #929baa;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   DESKTOP LAYOUT
+========================================= */
+
+@media (min-width: 768px) {
+
+    .main-content {
+        padding: 35px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-button {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE ADJUSTMENTS
+========================================= */
 
 @media (max-width: 650px) {
 
@@ -285,6 +590,16 @@ body {
     .player-table th,
     .player-table td {
         padding: 12px;
+    }
+
+    #cx,
+    #lme {
+        padding: 15px;
+    }
+
+    #cx .table-container,
+    #lme .table-container {
+        width: 100%;
     }
 
 }

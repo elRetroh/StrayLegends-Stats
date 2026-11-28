@@ -75,11 +75,11 @@ def main():
     print(f"Actual Body Length: {len(response_data) - 6}")
 
     if packet_type != 30906:
-        print("\nUnexpected packet type. Response not saved.")
+        raise ValueError("Invalid server response.")
         return
 
     if body_length != len(response_data) - 6:
-        print("\nPacket length mismatch. Response not saved.")
+        raise ValueError("Invalid server response.")
         return
 
     RESPONSE_FILE.write_bytes(response_data)

@@ -167,40 +167,71 @@ def save_lme_data(players):
     # Create directories if they don't exist
     HISTORY_DIRECTORY.mkdir(parents=True, exist_ok=True)
 
-    # Check whether current data already exists
-    if CURRENT_FILE.exists():
-
-        with CURRENT_FILE.open("r", encoding="utf-8") as file:
-            previous_players = json.load(file)
-
-        # Only archive if the data has changed
-        if previous_players != players:
-
-            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")
-
-            history_file = HISTORY_DIRECTORY / f"{timestamp}.json"
-
-            # Move previous data into historical storage
-            CURRENT_FILE.replace(history_file)
-
-    # Save the latest leaderboard
+    # Always update the current leaderboard
     with CURRENT_FILE.open("w", encoding="utf-8") as file:
         json.dump(players, file, indent=4, ensure_ascii=False)
 
-    # Retrieve historical files, newest first
-    history_files = sorted(
-        HISTORY_DIRECTORY.glob("*.json"),
-        key=lambda file: file.name,
-        reverse=True
-    )
-
-    # Remove anything beyond our retention limit
-    for old_file in history_files[MAX_HISTORY:]:
-
-        old_file.unlink()
-
     print(f"\nCurrent data saved: {CURRENT_FILE.name}")
-    print(f"Historical versions retained: {min(len(history_files), MAX_HISTORY)}")
+
+    # Save the last updated timestamp
+    timestamp_file = CURRENT_FILE.parent / "last_updated.json"
+
+    with timestamp_file.open("w", encoding="utf-8") as file:
+        json.dump({
+            "last_updated": datetime.now().astimezone().isoformat(timespec="minutes")
+        }, file, indent=4)
+
+    print("Last updated timestamp saved.")
+
+    # Create or update this week's snapshot on Wednesday
+    if datetime.now().weekday() == 2:
+
+        snapshot_date = datetime.now().strftime("%Y-%m-%d")
+        history_file = HISTORY_DIRECTORY / f"{snapshot_date}.json"
+
+        with history_file.open("w", encoding="utf-8") as file:
+            json.dump(players, file, indent=4, ensure_ascii=False)
+
+        # Keep this week plus the three previous weekly snapshots
+        history_files = sorted(
+            (
+                file for file in HISTORY_DIRECTORY.glob("*.json")
+                if file.name != "index.json"
+            ),
+            key=lambda file: file.name,
+            reverse=True
+        )
+
+        for old_file in history_files[4:]:
+            old_file.unlink()
+
+        # Create an index of the available weekly snapshots
+        history_files = sorted(
+            (
+                file for file in HISTORY_DIRECTORY.glob("*.json")
+                if file.name != "index.json"
+            ),
+            key=lambda file: file.name,
+            reverse=True
+        )
+
+        history_index = [
+            file.name
+            for file in history_files
+        ]
+
+        index_file = HISTORY_DIRECTORY / "index.json"
+
+        with index_file.open("w", encoding="utf-8") as file:
+            json.dump(history_index, file, indent=4)
+
+        print(f"Weekly snapshot saved: {history_file.name}")
+        print(f"Weekly snapshots retained: {min(len(history_files), 4)}")
+
+    else:
+        print("No weekly snapshot created (not Wednesday).")
+
+
 
 def main():
 

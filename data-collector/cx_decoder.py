@@ -12,7 +12,7 @@ PACKET_TYPE = 31010
 HEADER_SIZE = 6
 
 # Location of our test packet
-PACKET_FILE = Path(__file__).parent / "content.data"
+PACKET_FILE = Path(__file__).parent / "cx_content.data"
 
 # Data storage locations
 DATA_DIRECTORY = Path(__file__).parent.parent / "data" / "cx"
